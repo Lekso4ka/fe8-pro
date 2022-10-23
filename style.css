@@ -1,0 +1,40 @@
+.wrapper {
+    display: flex;
+    width: 860px;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: auto;
+    font-family: Menlo, "Courier New", monospace;
+}
+.card {
+    width: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    height: 200px;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 10px;
+    font-size: 20px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    position: relative;
+}
+.card>* {
+    z-index: 2;
+}
+h3 {
+    margin: 0;
+    font-size: 1em;
+}
+.back {
+    position: absolute;
+    z-index: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /* opacity: .3; */
+}
